@@ -11,28 +11,29 @@
 
 <body>
     <section>
-        <div class="container">
-            <div class="title">
+        <div class="container-box">
+            <div class="title-box">
                 <h1>Junk Removal Services</h1>
             </div>
             <div class="central-section">
                 <form class="form-box">
-                    <label for="name">Full Name</label>
-                    <input type="text" placeholder="Full Name" />
-                    <label for="name">Full Name</label>
-                    <input type="email" placeholder="Email Address" />
-                    <label for="service">Choose a Service</label>
+                    <label for="name">Full Name</label><br>
+                    <input type="text" placeholder="Full Name" /> <br>
+                    <label for="name">Email</label><br>
+                    <input type="email" placeholder="Email Address" /> <br>
+                    <label for="service">Choose a Service</label><br>
                     <select name="services" id="services">
                         <option value="trash">Trash Out</option>
                         <option value="clean">House Cleaning</option>
                         <option value="construction">Construction</option>
-                    </select>
-                    <button type="button" id="submit">Submit</button>
+                    </select> <br>
+                    <label for="service">Additional Message</label><br>
+                    <textarea name="message" id="message-box" cols="30" rows="6" placeholder="Message"></textarea><br>
+                    <button type="button" id="submit">Submit</button><br>
                 </form>
             </div>
         </div>
     </section>
-
 </body>
 <script src="./script.js"></script>
 
