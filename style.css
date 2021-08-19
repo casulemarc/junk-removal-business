@@ -8,7 +8,7 @@
 
 body {
     font-family: poppins, sans-serif;
-    background: rgb(255, 255, 255);
+    background: rgb(237, 238, 237);
 }
 
 section {
@@ -57,6 +57,7 @@ section {
     padding: 1rem;
     background-color: rgb(7, 250, 169);
     border-radius: 3px;
+    width: 90%;
 }
 
 .section-1 {
@@ -68,16 +69,16 @@ section {
     padding: 4.3rem;
     background-repeat: no-repeat;
     border-radius: 2px;
-    flex: 1;
+    flex: 1.5;
 
 }
 
 .section-2 {
     background: rgb(247, 243, 243);
     margin-left: 0.5rem;
-    border-radius: 2px;
+    border-radius: 1rem;
     flex: 1;
-    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .section-1 h2 {
@@ -138,11 +139,22 @@ button {
     height: auto;
     padding: 0.5rem;
     background-color: rgb(2, 204, 137);
-    border: none;
+    border: 2px solid rgb(2, 204, 137);
     color: white;
     font-weight: 600;
     font-size: 17px;
     margin-bottom: 1.5rem;
+}
+
+#call-us {
+    border-radius: 4px;
+}
+
+#call-us:hover {
+    border-radius: 4px;
+    background-color: #fff;
+    border: 2px solid rgb(2, 204, 137);
+    color: rgb(2, 204, 137);
 }
 
 .quote-div {
@@ -175,8 +187,9 @@ button {
 }
 
 .quote-title h2 {
-    margin: 1rem auto;
+    margin: 1rem;
     font-size: 35px;
+    text-align: center;
     color: rgb(71, 71, 71);
 }
 
@@ -187,6 +200,22 @@ button {
     border: 3px solid rgb(2, 204, 137);
     width: 30%;
     font-size: 20px;
+    box-shadow: 2px 2px 3px 1px rgba(54, 37, 37, 0.2);
+}
+
+.sendQoute:hover {
+    background: rgb(2, 204, 137);
+    color: #fff;
+    border: 3px solid rgb(2, 204, 137);
+}
+
+.service-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+    width: 100%;
 }
 
 .quote-title-box {
@@ -201,8 +230,9 @@ button {
     display: flex;
     flex: 1;
     height: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -210,13 +240,16 @@ button {
 
 .service-details img {
     padding: 1rem;
+    margin-left: 1rem;
+    align-items: center;
 }
 
 .service-header-box {
     display: flex;
     flex-direction: column;
-    flex: 2;
-    margin-left: 2rem;
+    align-items: left;
+    flex: 1;
+    margin-left: 1rem;
     padding: 1rem;
     height: 100%;
 }
@@ -224,10 +257,50 @@ button {
 .quote-title-box h2 {
     color: rgb(64, 65, 64);
     font-size: 30px;
+    margin-top: 1rem;
 }
 
 .service-header-box p {
     color: rgb(107, 109, 107);
+}
+
+.footer-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.divider {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(107, 109, 107);
+    border: 2px solid rgb(107, 109, 107);
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.footer-details p {
+    margin-left: 1rem;
+    margin-left: 1rem;
+    margin: 1rem;
+    color: rgb(133, 134, 133);
+}
+
+.footer-details a {
+    text-decoration: none;
+}
+
+.footer-details p:hover {
+    color: rgb(2, 204, 137);
 }
 
 @media only screen and (max-width: 1138px) {
@@ -235,6 +308,7 @@ button {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
     section {
@@ -287,6 +361,10 @@ button {
         font-size: 15px;
     }
 
+    .quote-title h2 {
+        margin: 0.5rem;
+    }
+
     .section-1 h2 {
         font-size: 30px;
     }
@@ -297,5 +375,9 @@ button {
 
     .section-1 button {
         font-size: 15px;
+    }
+
+    .footer-details {
+        flex-direction: column;
     }
 }
