@@ -41,8 +41,11 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: auto;
-    margin: 3rem;
+    height: 87%;
+    background-image: url(./images/background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .central-section {
@@ -52,15 +55,21 @@ section {
     flex-direction: row;
     margin: 3rem;
     padding: 1rem;
+    background-color: rgb(7, 250, 169);
+    border-radius: 3px;
 }
 
 .section-1 {
-    background: url(./images/image-1.jpg);
+    background: url(./images/moving-company.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     margin-right: 0.5rem;
     padding: 4.3rem;
     background-repeat: no-repeat;
     border-radius: 2px;
     flex: 1;
+
 }
 
 .section-2 {
@@ -72,17 +81,20 @@ section {
 }
 
 .section-1 h2 {
-    font-size: 32px;
+    font-size: 40px;
     margin-bottom: 1.5rem;
+    color: rgb(2, 204, 137);
 }
 
 .section-1 p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     color: #fff;
+    font-size: 20px;
 }
 
 .section-1 button {
     width: 250px;
+    font-size: 20px;
 }
 
 .form-box {
@@ -133,11 +145,110 @@ button {
     margin-bottom: 1.5rem;
 }
 
+.quote-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 13%;
+    float: right;
+}
+
+.quote-title {
+    flex: 1;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.quote-button {
+    flex: 1;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.quote-title h2 {
+    margin: 1rem auto;
+    font-size: 35px;
+    color: rgb(71, 71, 71);
+}
+
+.quote-button button {
+    margin: auto;
+    background: #fff;
+    color: rgb(2, 204, 137);
+    border: 3px solid rgb(2, 204, 137);
+    width: 30%;
+    font-size: 20px;
+}
+
+.quote-title-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-details {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-details img {
+    padding: 1rem;
+}
+
+.service-header-box {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin-left: 2rem;
+    padding: 1rem;
+    height: 100%;
+}
+
+.quote-title-box h2 {
+    color: rgb(64, 65, 64);
+    font-size: 30px;
+}
+
+.service-header-box p {
+    color: rgb(107, 109, 107);
+}
+
 @media only screen and (max-width: 1138px) {
     .title-box {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .container-box {
+        height: 100%;
+        flex: 1;
     }
 
     .central-section {
@@ -147,7 +258,8 @@ button {
     }
 
     .section-1 {
-        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
         margin-right: 0;
         width: 100%;
         justify-content: center;
@@ -157,9 +269,33 @@ button {
     .section-2 {
         width: 100%;
         margin-top: 1rem;
-        margin-bottom: 1rem;
+
         margin-left: 0;
         justify-content: center;
         align-items: center;
+    }
+
+    .quote-div {
+        flex: 1;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .quote-div div {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .section-1 h2 {
+        font-size: 30px;
+    }
+
+    .section-1 p {
+        font-size: 15px;
+    }
+
+    .section-1 button {
+        font-size: 15px;
     }
 }
