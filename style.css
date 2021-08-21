@@ -187,6 +187,7 @@ button {
     cursor: pointer;
 }
 
+
 button a {
     text-decoration: none;
     color: #fff;
@@ -194,8 +195,8 @@ button a {
 
 #submit:hover {
     border-radius: 4px;
-    background-color: rgb(2, 204, 137);
-    border: 2px solid rgb(16, 172, 120);
+    background-color: rgb(16, 172, 120);
+    border: 2px solid rgb(2, 204, 137);
     color: #fff;
 }
 
@@ -355,6 +356,9 @@ button a {
 
 .footer-details p:hover {
     color: rgb(2, 204, 137);
+}
+.error-message {
+    color: rgb(252, 103, 103);
 }
 
 @media only screen and (max-width: 1138px) {
