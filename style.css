@@ -99,16 +99,22 @@ section {
 }
 
 .form-box {
+    width: 90%;
     flex-direction: column;
-    margin: 1rem;
+    margin: 5%;
     font-weight: 600;
+    color: rgb(71, 71, 71);
+    font-size: 15px;
+}
+
+.form-box h2 {
+    text-align: center;
 }
 
 label {
     margin-top: auto;
     margin-bottom: auto;
     height: auto;
-
 }
 
 input {
@@ -116,6 +122,14 @@ input {
     height: auto;
     padding: 0.5rem;
     font-weight: 600;
+    color: rgb(67, 68, 68);
+    border: 2px solid rgb(215, 219, 213);
+    border-radius: 5px;
+    outline: none;
+}
+
+input:hover {
+    border: 2px solid rgb(2, 204, 137);
 }
 
 select {
@@ -124,6 +138,20 @@ select {
     padding: 0.5rem;
     font-weight: 600;
     color: rgb(109, 108, 108);
+    border: 2px solid rgb(215, 219, 213);
+    border-radius: 5px;
+    outline: none;
+}
+
+select:hover {
+    border: 2px solid rgb(2, 204, 137);
+}
+
+option {
+    font-weight: 600;
+    color: rgb(155, 155, 155);
+    outline: none;
+    background-color: transparent;
 }
 
 textarea {
@@ -131,7 +159,17 @@ textarea {
     height: auto;
     padding: 0.5rem;
     resize: none;
+    border: 2px solid rgb(215, 219, 213);
+    border-radius: 5px;
+    outline: none;
+    color: rgb(67, 68, 68);
+    font-family: Poppins;
+    font-weight: 500;
+}
 
+textarea:hover {
+    border: 2px solid rgb(2, 204, 137);
+    ;
 }
 
 button {
@@ -140,10 +178,25 @@ button {
     padding: 0.5rem;
     background-color: rgb(2, 204, 137);
     border: 2px solid rgb(2, 204, 137);
+    border-radius: 4px;
     color: white;
     font-weight: 600;
     font-size: 17px;
-    margin-bottom: 1.5rem;
+    outline: none;
+    box-shadow: 2px 2px 3px 1px rgba(54, 37, 37, 0.2);
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#submit:hover {
+    border-radius: 4px;
+    background-color: rgb(2, 204, 137);
+    border: 2px solid rgb(16, 172, 120);
+    color: #fff;
 }
 
 #call-us {
@@ -152,9 +205,9 @@ button {
 
 #call-us:hover {
     border-radius: 4px;
-    background-color: #fff;
+    background-color: rgb(16, 172, 120);
     border: 2px solid rgb(2, 204, 137);
-    color: rgb(2, 204, 137);
+    color: #fff;
 }
 
 .quote-div {
@@ -170,25 +223,26 @@ button {
 
 .quote-title {
     flex: 1;
-    height: 100%;
+    height: auto;
     justify-content: center;
     align-items: center;
     margin: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
+    width: 100%;
 }
 
 .quote-button {
     flex: 1;
-    height: 100%;
+    height: auto;
     justify-content: center;
     align-items: center;
     margin: 1rem;
-    padding: 2rem;
+    padding: 1rem;
+    width: 100%;
 }
 
 .quote-title h2 {
-    margin: 1rem;
-    font-size: 35px;
+    font-size: 32px;
     text-align: center;
     color: rgb(71, 71, 71);
 }

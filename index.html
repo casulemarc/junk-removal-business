@@ -19,18 +19,34 @@
             <div class="central-section">
                 <div class="section-1">
                     <div class="welcome-image">
-                        <h2>We move with a smile</h2>
+                        <h2>We Work With A Smile</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quis facilis atque ea ad
                             maxime deserunt veniam eum nulla, rerum molestias exercitationem repellendus rem laudantium
                             provident soluta odit, veritatis delectus!</p>
-                        <button type="button" id="call-us">Call Us Now</button>
+                        <button type="button" id="call-us"><a href='tel:1234567890'>Call Us Now</a></button>
                     </div>
                 </div>
                 <div class="section-2">
                     <div class="service-box">
-                        <div class="quote-title-box">
+                        <form class="form-box">
                             <h2>Our Services</h2>
-                        </div>
+                            <label for="name">Full Name</label><br>
+                            <input type="text" placeholder="Your Names" required class="form-control" /> <br>
+                            <label for="name">Email</label><br>
+                            <input type="email" placeholder="Email Address" required class="form-control" /> <br>
+                            <label for="service">Choose a Service</label><br>
+                            <select name="services" id="services" required>
+                                <option value="trash">Trash Out</option>
+                                <option value="clean">House Cleaning</option>
+                                <option value="moving">Moving</option>
+                                <option value="construction">Construction</option>
+                            </select> <br>
+                            <label for="service">Additional Message</label><br>
+                            <textarea name="message" id="message-box" cols="25" rows="5" placeholder="Message"
+                                class="form-control"></textarea><br>
+                            <button type="button" id="submit">Send My Inquiry</button><br>
+                        </form>
+                        <!--
                         <div class="service-details">
                             <img src="./images/building-picture.png" alt="building-picture" />
                             <div class="service-header-box">
@@ -58,35 +74,18 @@
                                 <h3>Trash Out</h3>
                                 <p>Lorem Ipsum dolor sit amet</p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
-                <!-- <form class="form-box">
-                        <label for="name">Full Name</label><br>
-                        <input type="text" placeholder="Full Name" required /> <br>
-                        <label for="name">Email</label><br>
-                        <input type="email" placeholder="Email Address" required /> <br>
-                        <label for="service">Choose a Service</label><br>
-                        <select name="services" id="services" required>
-                            <option value="trash">Trash Out</option>
-                            <option value="clean">House Cleaning</option>
-                            <option value="moving">Moving</option>
-                            <option value="construction">Construction</option>
-                        </select> <br>
-                        <label for="service">Additional Message</label><br>
-                        <textarea name="message" id="message-box" cols="30" rows="6"
-                            placeholder="Message"></textarea><br>
-                        <button type="button" id="submit">Get A Free Quote</button><br>
-                    </form> -->
             </div>
         </div>
         </div>
         <div class="quote-div">
             <div class="quote-title">
-                <h2>Get a Quote For Your Project</h2>
+                <h2>Find Out Other Services We Provide</h2>
             </div>
             <div class="quote-button">
-                <button type="button" class="sendQoute">Free Quote</button>
+                <button type="button" class="sendQoute">Contact Us</button>
             </div>
         </div>
         <div class="divider"></div>
@@ -101,7 +100,7 @@
         </div>
     </section>
     <script src="./script.js"></script>
-</body>
 
+</body>
 
 </html>
