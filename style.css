@@ -128,6 +128,23 @@ input {
     outline: none;
 }
 
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(204, 200, 200);
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(204, 200, 200);
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgb(204, 200, 200);
+}
+
 input:hover {
     border: 2px solid rgb(2, 204, 137);
 }
@@ -196,7 +213,7 @@ button a {
 #submit:hover {
     border-radius: 4px;
     background-color: rgb(16, 172, 120);
-    border: 2px solid rgb(2, 204, 137);
+    border: 2px solid rgb(16, 172, 120);
     color: #fff;
 }
 
@@ -207,7 +224,7 @@ button a {
 #call-us:hover {
     border-radius: 4px;
     background-color: rgb(16, 172, 120);
-    border: 2px solid rgb(2, 204, 137);
+    border: 2px solid rgb(16, 172, 120);
     color: #fff;
 }
 
@@ -258,10 +275,19 @@ button a {
     box-shadow: 2px 2px 3px 1px rgba(54, 37, 37, 0.2);
 }
 
+.sendQoute a {
+    color: rgb(2, 204, 137);
+    text-decoration: none;
+}
+
+.sendQoute a:hover {
+    color: #fff;
+}
+
 .sendQoute:hover {
     background: rgb(2, 204, 137);
-    color: #fff;
     border: 3px solid rgb(2, 204, 137);
+    color: #fff;
 }
 
 .service-box {
@@ -356,9 +382,6 @@ button a {
 
 .footer-details p:hover {
     color: rgb(2, 204, 137);
-}
-.error-message {
-    color: rgb(252, 103, 103);
 }
 
 @media only screen and (max-width: 1138px) {
